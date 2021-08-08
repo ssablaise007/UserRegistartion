@@ -45,4 +45,16 @@ public class UserRegistration {
         else
             System.out.println("enter valid emailid");
     }
+    /**
+     * Method for Checking PhoneNumber
+     */
+    public void PhoneNumber(){
+        System.out.print("Enter contact number with country code (91): " );
+        String ContactNumber = sc.nextLine();
+        boolean result = Pattern.matches("91\\s[0-9]{10}",ContactNumber);
+        if (result)
+            System.out.println("Success");
+        else
+            System.out.println("enter valid contact number");
+    }
 }

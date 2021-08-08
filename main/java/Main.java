@@ -4,5 +4,6 @@ public class Main {
         userregx.firstName();
         userregx.lastName();
         userregx.email();
+        userregx.PhoneNumber();
     }
 }
