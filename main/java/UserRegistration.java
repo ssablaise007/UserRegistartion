@@ -4,6 +4,7 @@ import java.util.regex.Pattern;
  * Class for User Validation ....
  */
 public class UserRegistration {
+    boolean check;
     Scanner sc = new Scanner(System.in);
 
     /**
@@ -57,4 +58,18 @@ public class UserRegistration {
         else
             System.out.println("enter valid contact number");
     }
+
+    public void checkPassword(){
+        System.out.print("Enter password: " );
+        String password = sc.next();
+        check = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]?){8,}.*$").matcher(password).matches();
+        if (!check) {
+            System.out.println(" password invalid ");
+            checkPassword();
+        }
+        else {
+            System.out.println(" password valid ");
+        }
+    }
+            System.out.println("enter valid password");
 }

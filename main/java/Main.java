@@ -5,5 +5,6 @@ public class Main {
         userregx.lastName();
         userregx.email();
         userregx.PhoneNumber();
+        userregx.checkPassword();
     }
 }
