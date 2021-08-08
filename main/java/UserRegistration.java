@@ -33,4 +33,16 @@ public class UserRegistration {
         else
             System.out.println("please enter valid last name ");
     }
+    /**
+     * Method for Checking EmailID
+     */
+    public void email() {
+        System.out.print("Enter email ID: " );
+        String Email = sc.next();
+        Boolean result = Pattern.matches("^[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)$",Email);
+        if (result)
+            System.out.println("Success");
+        else
+            System.out.println("enter valid emailid");
+    }
 }

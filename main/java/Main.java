@@ -3,5 +3,6 @@ public class Main {
         UserRegistration userregx = new UserRegistration();
         userregx.firstName();
         userregx.lastName();
+        userregx.email();
     }
 }
